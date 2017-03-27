@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="61381" started-at="2017-03-27T12:56:41Z" finished-at="2017-03-27T12:57:43Z">
+    <groups>
+      <group name="Sanity">
+        <method signature="Duplicatelead.duplicateleads(java.lang.String, java.lang.String)[pri:0, instance:groups.hw.Duplicatelead@10f6bfd]" name="duplicateleads" class="groups.hw.Duplicatelead"/>
+        <method signature="EditLead.editLeads(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:groups.hw.EditLead@1975490]" name="editLeads" class="groups.hw.EditLead"/>
+      </group> <!-- Sanity -->
+      <group name="Smoke">
+        <method signature="CreateLead.creteLead(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:groups.hw.CreateLead@157f54e]" name="creteLead" class="groups.hw.CreateLead"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test name="Test" duration-ms="61381" started-at="2017-03-27T12:56:41Z" finished-at="2017-03-27T12:57:43Z">
+      <class name="groups.hw.CreateLead">
+        <test-method status="PASS" signature="loginleaftaps()[pri:0, instance:groups.hw.CreateLead@157f54e]" name="loginleaftaps" is-config="true" duration-ms="9679" started-at="2017-03-27T18:26:41Z" finished-at="2017-03-27T18:26:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginleaftaps -->
+        <test-method status="PASS" signature="creteLead(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:groups.hw.CreateLead@157f54e]" name="creteLead" duration-ms="6267" started-at="2017-03-27T18:26:51Z" data-provider="createLeadData" finished-at="2017-03-27T18:26:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Cognizant Techn..Sol..]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Srihari]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[M]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[17865]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Conference]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Automobile]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[First Name Local]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Last Name Local]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Mr.]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Er.]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[My Dept]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[120000]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[INR - Indian Rupee]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creteLead -->
+        <test-method status="PASS" signature="closeBrowserLeafTaps()[pri:0, instance:groups.hw.CreateLead@157f54e]" name="closeBrowserLeafTaps" is-config="true" duration-ms="2319" started-at="2017-03-27T18:26:57Z" finished-at="2017-03-27T18:27:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserLeafTaps -->
+      </class> <!-- groups.hw.CreateLead -->
+      <class name="groups.hw.EditLead">
+        <test-method status="PASS" signature="loginleaftaps()[pri:0, instance:groups.hw.EditLead@1975490]" name="loginleaftaps" is-config="true" duration-ms="8518" started-at="2017-03-27T18:27:20Z" finished-at="2017-03-27T18:27:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginleaftaps -->
+        <test-method status="PASS" signature="editLeads(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:groups.hw.EditLead@1975490]" name="editLeads" duration-ms="11698" depends-on-groups="Smoke" started-at="2017-03-27T18:27:29Z" data-provider="eleadssource" finished-at="2017-03-27T18:27:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Srihari]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[View Lead | opentaps CRM]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[CTS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editLeads -->
+        <test-method status="PASS" signature="closeBrowserLeafTaps()[pri:0, instance:groups.hw.EditLead@1975490]" name="closeBrowserLeafTaps" is-config="true" duration-ms="2326" started-at="2017-03-27T18:27:40Z" finished-at="2017-03-27T18:27:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserLeafTaps -->
+      </class> <!-- groups.hw.EditLead -->
+      <class name="groups.hw.Duplicatelead">
+        <test-method status="PASS" signature="loginleaftaps()[pri:0, instance:groups.hw.Duplicatelead@10f6bfd]" name="loginleaftaps" is-config="true" duration-ms="8521" started-at="2017-03-27T18:27:00Z" finished-at="2017-03-27T18:27:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginleaftaps -->
+        <test-method status="PASS" signature="duplicateleads(java.lang.String, java.lang.String)[pri:0, instance:groups.hw.Duplicatelead@10f6bfd]" name="duplicateleads" duration-ms="9726" depends-on-groups="Smoke" started-at="2017-03-27T18:27:08Z" data-provider="duplicateData" finished-at="2017-03-27T18:27:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Duplicate Lead | opentaps CRM]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- duplicateleads -->
+        <test-method status="PASS" signature="closeBrowserLeafTaps()[pri:0, instance:groups.hw.Duplicatelead@10f6bfd]" name="closeBrowserLeafTaps" is-config="true" duration-ms="2310" started-at="2017-03-27T18:27:18Z" finished-at="2017-03-27T18:27:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserLeafTaps -->
+      </class> <!-- groups.hw.Duplicatelead -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

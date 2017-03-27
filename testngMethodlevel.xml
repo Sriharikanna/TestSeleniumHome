@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Sequential">
+		<classes>
+			<class name="atClass.week4.AllMethod">
+				<methods>
+					<include name="createLead"></include>
+					<include name="editLead"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	<test name="Parallelprocess" parallel="methods">
+		<classes>
+			<class name="atClass.week4.AllMethod">
+				<methods>
+					<include name="createLead"></include>
+					<include name="editLead"></include>
+					<include name="deleteLeads"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

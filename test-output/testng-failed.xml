@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="none">
+  <test name="Test(failed)" parallel="none">
+    <groups>
+      <run>
+        <include name="S.*"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="groups.hw.CreateLead">
+        <methods>
+          <include name="creteLead" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- groups.hw.CreateLead -->
+      <class name="groups.hw.EditLead">
+        <methods>
+          <include name="editLeads"/>
+        </methods>
+      </class> <!-- groups.hw.EditLead -->
+      <class name="groups.hw.Duplicatelead">
+        <methods>
+          <include name="duplicateleads"/>
+        </methods>
+      </class> <!-- groups.hw.Duplicatelead -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
