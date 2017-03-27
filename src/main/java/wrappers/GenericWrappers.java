@@ -11,7 +11,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.NoSuchWindowException;
 import org.openqa.selenium.NotFoundException;
 import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -44,7 +44,7 @@ public class GenericWrappers implements Wrappers {
 			// Getting handle of initial window
 			parentwindow = driver.getWindowHandle();
 			System.out.println("The handle of the parent Window: " + parentwindow);
-			System.out.println("invokeApp " + "The Browser " +"\""+ browser+"\""+ " is Launched");
+			System.out.println("invokeApp " + "The Browser " + "\"" + browser + "\"" + " is Launched");
 		} catch (NoSuchWindowException e) {
 			System.err.println("invokeApp Method- WebDriver Exception..");
 		} catch (WebDriverException e) {
@@ -63,7 +63,7 @@ public class GenericWrappers implements Wrappers {
 		try {
 			driver.findElementById(idValue).clear();
 			driver.findElementById(idValue).sendKeys(data);
-			System.out.println("enterById " + "Your text " +"\""+ data+"\""+ " is entered");
+			System.out.println("enterById " + "Your text " + "\"" + data + "\"" + " is entered");
 		} catch (NoSuchElementException e) {
 			System.err.println("enterById Method- No Such Element Exception");
 		} catch (NotFoundException e) {
@@ -83,7 +83,7 @@ public class GenericWrappers implements Wrappers {
 		try {
 			driver.findElementByName(nameValue).clear();
 			driver.findElementById(nameValue).sendKeys(data);
-			System.out.println("enterByName - Your Text is entered with data :" +"\""+ data+"\"");
+			System.out.println("enterByName - Your Text is entered with data :" + "\"" + data + "\"");
 		} catch (NoSuchElementException e) {
 			System.err.println("enterByName Method- No Such Element Exception");
 		} catch (NotFoundException e) {
@@ -103,7 +103,7 @@ public class GenericWrappers implements Wrappers {
 		try {
 			driver.findElementByXPath(xpathValue).clear();
 			driver.findElementByXPath(xpathValue).sendKeys(data);
-			System.out.println("enterByXpath -  Your text is entered with data :" +"\""+ data+"\"");
+			System.out.println("enterByXpath -  Your text is entered with data :" + "\"" + data + "\"");
 		} catch (NoSuchElementException e) {
 			System.err.println("enterByXpath Method- No Such Element Exception");
 		} catch (NotFoundException e) {
@@ -125,7 +125,8 @@ public class GenericWrappers implements Wrappers {
 		try {
 			if (driver.getTitle().contains(title)) {
 				System.out.println("You're landed in the page where your title looks similar");
-				System.out.println("verifyTitle <<->> Given title header is ::"+"\""+title +"\""+":: Retrieved Title ::"+ driver.getTitle());
+				System.out.println("verifyTitle <<->> Given title header is ::" + "\"" + title + "\""
+						+ ":: Retrieved Title ::" + driver.getTitle());
 				bReturn = true;
 			}
 		} catch (NoSuchElementException e) {
@@ -147,9 +148,9 @@ public class GenericWrappers implements Wrappers {
 	public void verifyTextById(String id, String text) {
 		try {
 			if (driver.findElementByLinkText(id).getText().equals(text)) {
-				System.out.println("verifyTextById - Your " +"\""+ text +"\""+ "is available");
+				System.out.println("verifyTextById - Your " + "\"" + text + "\"" + "is available");
 			} else {
-				System.out.println("verifyTextById -Your " +"\""+ text +"\""+ "is Not available");
+				System.out.println("verifyTextById -Your " + "\"" + text + "\"" + "is Not available");
 			}
 		} catch (NoSuchElementException e) {
 			System.err.println("verifyTextById Method- No Such Element Exception");
@@ -169,9 +170,9 @@ public class GenericWrappers implements Wrappers {
 	public void verifyTextByXpath(String xpath, String text) {
 		try {
 			if (driver.findElementByXPath(xpath).getText().equals(text)) {
-				System.out.println("verifyTextByXpath - Your " +"\""+ text +"\""+ " Is Available");
+				System.out.println("verifyTextByXpath - Your " + "\"" + text + "\"" + " Is Available");
 			} else {
-				System.out.println("verifyTextByXpath - Your " +"\""+ text +"\""+ " Is Not Available");
+				System.out.println("verifyTextByXpath - Your " + "\"" + text + "\"" + " Is Not Available");
 			}
 		} catch (NoSuchElementException e) {
 			System.err.println("verifyTextByXpath Method- No Such Element Exception");
@@ -195,7 +196,7 @@ public class GenericWrappers implements Wrappers {
 		try {
 			String rwdriver = driver.findElementByXPath(xpath).getText();
 			if (rwdriver.contains(text)) {
-				System.out.println("verifyTextContainsByXpath - Your text " +"\""+ text+"\"" + " Is Available");
+				System.out.println("verifyTextContainsByXpath - Your text " + "\"" + text + "\"" + " Is Available");
 			} else
 				System.out.println("verifyTextContainsByXpath - Your text " + text + " Is Not Available");
 		} catch (NoSuchElementException e) {
@@ -366,7 +367,8 @@ public class GenericWrappers implements Wrappers {
 		String gettext = null;
 		try {
 			gettext = driver.findElementByXPath(xpathVal).getText();
-			System.out.println("getTextByXpath - The value you're looking for is: " +"\""+ driver.findElementByXPath(xpathVal).getText()+"\"");
+			System.out.println("getTextByXpath - The value you're looking for is: " + "\""
+					+ driver.findElementByXPath(xpathVal).getText() + "\"");
 		} catch (NoSuchElementException e) {
 			System.err.println("getTextByXpath Method- No Such Element Exception");
 		} catch (NotFoundException e) {
@@ -388,7 +390,7 @@ public class GenericWrappers implements Wrappers {
 			WebElement webel = driver.findElementById(id);
 			Select ddown = new Select(webel);
 			ddown.selectByVisibleText(value);
-			System.out.println("selectVisibileTextById - You are visible text " +"\""+ value +"\""+ " is selected");
+			System.out.println("selectVisibileTextById - You are visible text " + "\"" + value + "\"" + " is selected");
 		} catch (NoSuchElementException e) {
 			System.err.println("selectVisibileTextById Method- No Such Element Exception");
 		} catch (NotFoundException e) {
@@ -409,8 +411,8 @@ public class GenericWrappers implements Wrappers {
 			WebElement webel = driver.findElementById(id);
 			Select ddown = new Select(webel);
 			ddown.selectByIndex(value);
-			System.out
-					.println("selectIndexById - The element" +"\""+ value+"\""+ " is successfully selected using select index");
+			System.out.println("selectIndexById - The element" + "\"" + value + "\""
+					+ " is successfully selected using select index");
 		} catch (NoSuchElementException e) {
 			System.err.println("selectIndexById Method- No Such Element Exception");
 		} catch (NotFoundException e) {
@@ -502,7 +504,7 @@ public class GenericWrappers implements Wrappers {
 	public String getAlertText() {
 		try {
 			driver.switchTo().alert();
-			System.out.println("getAlertText - Your Alert text: " +"\""+ driver.switchTo().alert().getText()+"\"");
+			System.out.println("getAlertText - Your Alert text: " + "\"" + driver.switchTo().alert().getText() + "\"");
 		} catch (NoAlertPresentException e) {
 			System.err.println("getAlertText Method- WebDriver Exception");
 		} catch (Exception e) {
@@ -515,7 +517,7 @@ public class GenericWrappers implements Wrappers {
 	// This method will take snaps whenever its called
 	public void takeSnap() {
 		File src = driver.getScreenshotAs(OutputType.FILE);
-		
+
 		File destFile = new File("./snaps/snap" + i + ".jpg");
 		try {
 			FileUtils.copyFile(src, destFile);

@@ -9,18 +9,19 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
 
 public class LeafTapswrappers extends GenericWrappers {
-	//@Parameters({"browser","url","uname","pwd"})
+	// @Parameters({"browser","url","uname","pwd"})
 	@BeforeMethod(groups = "commonforall")
-	public void loginleaftaps(/*@Optional("firefox")String browser,String url,String uname, String pwd*/) {
-		//invokeApp(browser, url);
+	public void loginleaftaps(/*
+								 * @Optional("firefox")String browser,String
+								 * url,String uname, String pwd
+								 */) {
+		// invokeApp(browser, url);
 		invokeApp("chrome", "http://www.leaftaps.com");
-		//enterById("username", uname);
+		// enterById("username", uname);
 		enterById("username", "DemoSalesManager");
-		//enterById("password", pwd);
+		// enterById("password", pwd);
 		enterById("password", "crmsfa");
 		clickByClassName("decorativeSubmit");
 		clickByLink("CRM/SFA");
