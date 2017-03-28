@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" verbose="5">
+	<test name="Sequential">
+		<classes>
+			<class name="testNG.homeWork.CreateLead" />
+			<class name="testNG.homeWork.EditLeads" />
+
+		</classes>
+	</test> <!-- Test -->
+	<test name="Parallel" parallel="classes">
+		<classes>
+			<class name="testNG.homeWork.Duplicatelead" />
+			<class name="testNG.homeWork.DeleteLeads" />
+			<class name="testNG.homeWork.Mergeleads" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

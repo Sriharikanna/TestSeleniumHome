@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,17 +48,17 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>D:\Selenium WS\Selenese\excludeRegression.xml</span>
+                    <span>D:\Selenium\GIT\Selenese\testngExecution5hw.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Suite">
-                    <span>2 groups</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testNG.homeWork.CreateLead" hash-for-method="creteLead(Cognizant Techn..Sol.., Srihari, M, 17865, Conference, Automobile, First Name Local, Last Name Local...)">creteLead(Cognizant Techn..Sol.., Srihari, M, 17865, Conference, Automobile, First Name Local, Last Name Local...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,17 +115,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="groups.hw.CreateLead" hash-for-method="creteLead(Cognizant Techn..Sol.., Srihari, M, 17865, Conference, Automobile, First Name Local, Last Name Local...)">creteLead(Cognizant Techn..Sol.., Srihari, M, 17865, Conference, Automobile, First Name Local, Last Name Local...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testNG.homeWork.DeleteLeads" hash-for-method="deleteLeads(123, No records to display)">deleteLeads(123, No records to display)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="groups.hw.Duplicatelead" hash-for-method="duplicateleads(test@test.com, Duplicate Lead | opentaps CRM)">duplicateleads(test@test.com, Duplicate Lead | opentaps CRM)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testNG.homeWork.Duplicatelead" hash-for-method="duplicateleads(test@test.com, Duplicate Lead | opentaps CRM)">duplicateleads(test@test.com, Duplicate Lead | opentaps CRM)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="groups.hw.EditLead" hash-for-method="editLeads(Srihari, View Lead | opentaps CRM, CTS)">editLeads(Srihari, View Lead | opentaps CRM, CTS)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testNG.homeWork.EditLeads" hash-for-method="editLeads(Srihari, View Lead | opentaps CRM, CTS)">editLeads(Srihari, View Lead | opentaps CRM, CTS)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testNG.homeWork.Mergeleads" hash-for-method="login(1, 1)">login(1, 1)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -126,10 +145,67 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testNG.homeWork.CreateLead</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="creteLead(Cognizant Techn..Sol.., Srihari, M, 17865, Conference, Automobile, First Name Local, Last Name Local...)">
+                  </a> <!-- creteLead(Cognizant Techn..Sol.., Srihari, M, 17865, Conference, Automobile, First Name Local, Last Name Local...) -->
+                  <span class="method-name">creteLead</span>
+                  <span class="parameters">(Cognizant Techn..Sol.., Srihari, M, 17865, Conference, Automobile, First Name Local, Last Name Local, Mr., Er., My Dept, 120000, INR - Indian Rupee)</span>
+                  <div class="stack-trace">java.lang.RuntimeException
+	at wrappers.GenericWrappers.clickByLink(GenericWrappers.java:280)
+	at testNG.homeWork.CreateLead.creteLead(CreateLead.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">groups.hw.EditLead</span>
+              <span class="class-name">testNG.homeWork.Duplicatelead</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="duplicateleads(test@test.com, Duplicate Lead | opentaps CRM)">
+                  </a> <!-- duplicateleads(test@test.com, Duplicate Lead | opentaps CRM) -->
+                  <span class="method-name">duplicateleads</span>
+                  <span class="parameters">(test@test.com, Duplicate Lead | opentaps CRM)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testNG.homeWork.EditLeads</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -145,15 +221,15 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">groups.hw.CreateLead</span>
+              <span class="class-name">testNG.homeWork.Mergeleads</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="creteLead(Cognizant Techn..Sol.., Srihari, M, 17865, Conference, Automobile, First Name Local, Last Name Local...)">
-                  </a> <!-- creteLead(Cognizant Techn..Sol.., Srihari, M, 17865, Conference, Automobile, First Name Local, Last Name Local...) -->
-                  <span class="method-name">creteLead</span>
-                  <span class="parameters">(Cognizant Techn..Sol.., Srihari, M, 17865, Conference, Automobile, First Name Local, Last Name Local, Mr., Er., My Dept, 120000, INR - Indian Rupee)</span>
+                  <a name="login(1, 1)">
+                  </a> <!-- login(1, 1) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(1, 1)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -161,15 +237,15 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">groups.hw.Duplicatelead</span>
+              <span class="class-name">testNG.homeWork.DeleteLeads</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="duplicateleads(test@test.com, Duplicate Lead | opentaps CRM)">
-                  </a> <!-- duplicateleads(test@test.com, Duplicate Lead | opentaps CRM) -->
-                  <span class="method-name">duplicateleads</span>
-                  <span class="parameters">(test@test.com, Duplicate Lead | opentaps CRM)</span>
+                  <a name="deleteLeads(123, No records to display)">
+                  </a> <!-- deleteLeads(123, No records to display) -->
+                  <span class="method-name">deleteLeads</span>
+                  <span class="parameters">(123, No records to display)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -177,30 +253,26 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Selenium WS\Selenese\excludeRegression.xml</span>
+            <span class="header-content">D:\Selenium\GIT\Selenese\testngExecution5hw.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot; parallel=&quot;none&quot;&gt;
-  &lt;test name=&quot;Test&quot;&gt;
-    &lt;groups&gt;
-      &lt;run&gt;
-        &lt;exclude name=&quot;Re.*&quot;/&gt;
-      &lt;/run&gt;
-    &lt;/groups&gt;
-    &lt;packages&gt;
-      &lt;package name=&quot;groups.hw&quot;/&gt;
-    &lt;/packages&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;5&quot; name=&quot;Suite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test name=&quot;Sequential&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;groups.hw.CreateLead&quot;/&gt;
-      &lt;class name=&quot;groups.hw.DeleteLead&quot;/&gt;
-      &lt;class name=&quot;groups.hw.Duplicatelead&quot;/&gt;
-      &lt;class name=&quot;groups.hw.EditLead&quot;/&gt;
-      &lt;class name=&quot;groups.hw.Mergelead&quot;/&gt;
+      &lt;class name=&quot;testNG.homeWork.CreateLead&quot;/&gt;
+      &lt;class name=&quot;testNG.homeWork.EditLeads&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- Sequential --&gt;
+  &lt;test name=&quot;Parallel&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testNG.homeWork.Duplicatelead&quot;/&gt;
+      &lt;class name=&quot;testNG.homeWork.DeleteLeads&quot;/&gt;
+      &lt;class name=&quot;testNG.homeWork.Mergeleads&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Parallel --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -212,7 +284,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (5 classes)</span>
+                <span class="test-name">Sequential (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Parallel (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -222,26 +297,6 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">Sanity</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">duplicateleads</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">editLeads</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
-            <div class="test-group">
-              <span class="test-group-name">Smoke</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">creteLead</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -258,24 +313,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'editLeads')
-data.setCell(0, 2, 'groups.hw.EditLead')
-data.setCell(0, 3, 11698);
+data.setCell(0, 1, 'login')
+data.setCell(0, 2, 'testNG.homeWork.Mergeleads')
+data.setCell(0, 3, 27516);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'duplicateleads')
-data.setCell(1, 2, 'groups.hw.Duplicatelead')
-data.setCell(1, 3, 9726);
+data.setCell(1, 1, 'editLeads')
+data.setCell(1, 2, 'testNG.homeWork.EditLeads')
+data.setCell(1, 3, 21359);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'creteLead')
-data.setCell(2, 2, 'groups.hw.CreateLead')
-data.setCell(2, 3, 6267);
+data.setCell(2, 1, 'deleteLeads')
+data.setCell(2, 2, 'testNG.homeWork.DeleteLeads')
+data.setCell(2, 3, 20521);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'duplicateleads')
+data.setCell(3, 2, 'testNG.homeWork.Duplicatelead')
+data.setCell(3, 3, 12179);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'creteLead')
+data.setCell(4, 2, 'testNG.homeWork.CreateLead')
+data.setCell(4, 3, 10332);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 27 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -290,23 +353,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">groups.hw.DeleteLead</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">deleteLeads</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">groups.hw.Mergelead</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">login</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -315,48 +364,104 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">groups.hw.CreateLead</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testNG.homeWork.CreateLead</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">loginleaftaps</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">creteLead(Cognizant Techn..Sol.., Srihari, M, 17865, Conference, Automobile, First Name Local, Last Name Local...)</span>
-                <span class="method-start">9679 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowserLeafTaps</span>
-                <span class="method-start">15947 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">groups.hw.Duplicatelead</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testNG.homeWork.Duplicatelead</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">loginleaftaps</span>
-                <span class="method-start">18269 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNG.homeWork.CreateLead</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">creteLead(Cognizant Techn..Sol.., Srihari, M, 17865, Conference, Automobile, First Name Local, Last Name Local...)</span>
+                <span class="method-start">11928 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNG.homeWork.Duplicatelead</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">duplicateleads(test@test.com, Duplicate Lead | opentaps CRM)</span>
-                <span class="method-start">26790 ms</span>
+                <span class="method-start">12377 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNG.homeWork.CreateLead</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowserLeafTaps</span>
-                <span class="method-start">36517 ms</span>
+                <span class="method-start">22299 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">groups.hw.EditLead</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testNG.homeWork.EditLeads</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">loginleaftaps</span>
-                <span class="method-start">38827 ms</span>
+                <span class="method-start">22378 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNG.homeWork.Duplicatelead</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowserLeafTaps</span>
+                <span class="method-start">24558 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNG.homeWork.DeleteLeads</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">loginleaftaps</span>
+                <span class="method-start">26885 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNG.homeWork.EditLeads</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">editLeads(Srihari, View Lead | opentaps CRM, CTS)</span>
-                <span class="method-start">47345 ms</span>
+                <span class="method-start">37028 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNG.homeWork.DeleteLeads</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">deleteLeads(123, No records to display)</span>
+                <span class="method-start">39998 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNG.homeWork.EditLeads</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowserLeafTaps</span>
+                <span class="method-start">58387 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNG.homeWork.DeleteLeads</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowserLeafTaps</span>
+                <span class="method-start">60522 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNG.homeWork.Mergeleads</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">loginleaftaps</span>
+                <span class="method-start">62832 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">login(1, 1)</span>
+                <span class="method-start">70733 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowserLeafTaps</span>
-                <span class="method-start">59043 ms</span>
+                <span class="method-start">98251 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

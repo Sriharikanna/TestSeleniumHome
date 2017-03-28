@@ -11,7 +11,7 @@ public class CreateLead extends LeafTapswrappers {
 			String lNL, String pTitle, String gTitle, String dName, String annualR, String currency) {
 
 		// Click on Create Lead
-		clickByLink("Create Lead");
+		clickByLink("Create Lead1");
 		// Enter Company Name
 		enterById("createLeadForm_companyName", cName);
 		// Enter First Name

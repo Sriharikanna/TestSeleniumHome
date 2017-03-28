@@ -277,13 +277,17 @@ public class GenericWrappers implements Wrappers {
 			System.out.println("clickByLink - The item located is clicked");
 		} catch (NoSuchElementException e) {
 			System.err.println("clickByLink Method- No Such Element Exception");
+			throw new RuntimeException();
 		} catch (NotFoundException e) {
 			System.err.println("clickByLink Method- Not found Exception");
+			throw new RuntimeException();
 		} catch (WebDriverException e) {
 			System.err.println("clickByLink Method- WebDriver Exception");
+			throw new RuntimeException();
 		} catch (Exception e) {
 			System.err.println("clickByLink Method- Exception Unknown..Check Below Stacktrace");
 			e.printStackTrace();
+			throw new RuntimeException();
 		} finally {
 			takeSnap();
 		}
