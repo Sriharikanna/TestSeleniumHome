@@ -8,6 +8,7 @@ import wrappers.LeafTapsWrappers;
 
 public class LoginPage extends LeafTapsWrappers  {
 
+
 	// This is to confirm you are in Login Page
 	public LoginPage(RemoteWebDriver driver, ExtentTest test){
 		this.driver = driver;
@@ -24,6 +25,7 @@ public class LoginPage extends LeafTapsWrappers  {
 		return this;
 	}
 	
+	
 	// Enter password in Login Page
 	public LoginPage enterPassword(String password){
 		enterById(prop.getProperty("Login.Password.Id"), password);
@@ -35,7 +37,7 @@ public class LoginPage extends LeafTapsWrappers  {
 		clickByClassName(prop.getProperty("Login.LoginButton.Class"));
 		return new HomePage(driver, test);
 	}
-	
+
 	// Click login button on negative case
 	public LoginPage clickLoginForFailure(){
 		clickByClassName(prop.getProperty("Login.LoginButton.Class"));
@@ -47,5 +49,5 @@ public class LoginPage extends LeafTapsWrappers  {
 		verifyTextContainsById(prop.getProperty("Login.Error.Id"), text);
 		return this;
 	}
-
+	
 }

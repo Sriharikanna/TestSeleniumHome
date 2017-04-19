@@ -13,58 +13,56 @@ public abstract class Reporter {
 
 	public void reportStep(String desc, String status, boolean bSnap) {
 
-		if(bSnap && !status.equalsIgnoreCase("INFO")){
+		if (bSnap && !status.equalsIgnoreCase("INFO")) {
 			long snapNumber = 100000l;
-			
+
 			try {
-				snapNumber= takeSnap();
+				snapNumber = takeSnap();
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
-			desc = desc+test.
-					addScreenCapture("./../reports/images/"+snapNumber+".jpg");
+			desc = desc + test.addScreenCapture("./../reports/images/" + snapNumber + ".jpg");
 		}
-		
+
 		// Write if it is successful or failure or information
-		if(status.equalsIgnoreCase("PASS")){
+		if (status.equalsIgnoreCase("PASS")) {
 			test.log(LogStatus.PASS, desc);
-		}else if(status.equalsIgnoreCase("FAIL")){
+		} else if (status.equalsIgnoreCase("FAIL")) {
 			test.log(LogStatus.FAIL, desc);
 			throw new RuntimeException("FAILED");
-		}else if(status.equalsIgnoreCase("WARN")){
+		} else if (status.equalsIgnoreCase("WARN")) {
 			test.log(LogStatus.WARNING, desc);
-		}else if(status.equalsIgnoreCase("INFO")){
+		} else if (status.equalsIgnoreCase("INFO")) {
 			test.log(LogStatus.INFO, desc);
 		}
-	
+
 	}
-	
+
 	public void reportStep(String desc, String status) {
 		reportStep(desc, status, true);
 	}
 
 	public abstract long takeSnap();
-	
 
-	public ExtentReports startResult(){
-		extent = new ExtentReports("./reports/report.html", false);
+	public ExtentReports startResult() {
+
+		extent = new ExtentReports("D:/Selenium/POM/reports/report.html", false);
+		System.out.println("Check extent obj: "+extent);
 		extent.loadConfig(new File("./src/main/resources/extent-config.xml"));
 		return extent;
 	}
 
-	public ExtentTest startTestCase(String testCaseName, String testDescription){
+	public ExtentTest startTestCase(String testCaseName, String testDescription) {
 		test = extent.startTest(testCaseName, testDescription);
 		return test;
 	}
 
-	public void endResult(){		
+	public void endResult() {
 		extent.flush();
 	}
 
-	public void endTestcase(){
+	public void endTestcase() {
 		extent.endTest(test);
 	}
 
-	
-	
 }

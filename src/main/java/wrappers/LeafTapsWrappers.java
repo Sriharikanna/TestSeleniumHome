@@ -51,7 +51,7 @@ public class LeafTapsWrappers extends GenericWrappers {
 	
 	@DataProvider(name="fetchData")
 	public Object[][] getData(){
-		return DataInputProvider.getAllSheetData("./data/"+dataSheetName+".xlsx");		
+		return DataInputProvider.getAllSheetData("D:\\Selenium\\POM\\data\\"+dataSheetName+".xlsx");		
 	}	
 	
 	

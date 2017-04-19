@@ -27,7 +27,11 @@ public class HomePage extends LeafTapsWrappers  {
 		return new LoginPage(driver,test);
 
 	}
-	
+	public MyHomePage clickCrmsfa()
+	{
+		clickByLink(prop.getProperty("Home.CRMSFA.Link"));
+		return new MyHomePage(driver, test);
+	}
 	
 	
 }

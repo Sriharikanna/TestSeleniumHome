@@ -1,0 +1,90 @@
+public RemoteWebDriver driver;
+	protected static Properties prop;
+	public String sUrl,primaryWindowHandle,sHubUrl,sHubPort;
+	
+	public GenericWrappers() {
+		Properties prop = new Properties();
+		try {
+			prop.load(new FileInputStream(new File("./src/main/resources/config.properties")));
+			sHubUrl = prop.getProperty("HUB");
+			sHubPort = prop.getProperty("PORT");
+			sUrl = prop.getProperty("URL");
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public GenericWrappers(RemoteWebDriver driver, ExtentTest test) {
+		this.driver = driver;
+		this.test=test;
+	}
+
+
+	public void loadObjects() {
+		prop = new Properties();
+		try {
+			prop.load(new FileInputStream(new File("./src/main/resources/object.properties")));
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	public void unloadObjects() {
+		prop = null;
+	}
+
+	/**
+	 * This method will launch the browser in local machine and maximise the browser and set the
+	 * wait for 30 seconds and load the url
+	 * @author Babu - TestLeaf
+	 * @param url - The url with http or https
+	 * 
+	 */
+	public void invokeApp(String browser) {
+		invokeApp(browser,false);
+	}
+
+	/**
+	 * This method will launch the browser in grid node (if remote) and maximise the browser and set the
+	 * wait for 30 seconds and load the url 
+	 * @author Babu - TestLeaf
+	 * @param url - The url with http or https
+	 * 
+	 */
+	public void invokeApp(String browser, boolean bRemote) {
+		try {
+
+			DesiredCapabilities dc = new DesiredCapabilities();
+			dc.setBrowserName(browser);
+			dc.setPlatform(Platform.WINDOWS);
+
+			// this is for grid run
+			if(bRemote)
+				driver = new RemoteWebDriver(new URL("http://"+sHubUrl+":"+sHubPort+"/wd/hub"), dc);
+			else{ // this is for local run
+				if(browser.equalsIgnoreCase("chrome")){
+					System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+					driver = new ChromeDriver();
+				}else{
+					System.setProperty("webdriver.gecko.driver", "./drivers/geckodriver.exe");
+					driver = new FirefoxDriver();
+				}
+			}
+
+		//	driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			driver.get(sUrl);
+
+			primaryWindowHandle = driver.getWindowHandle();		
+			reportStep("The browser:" + browser + " launched successfully", "PASS");
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			reportStep("The browser:" + browser + " could not be launched", "FAIL");
+		}
+	}
