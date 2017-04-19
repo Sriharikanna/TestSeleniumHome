@@ -1,39 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="5" name="Failed suite [Suite]" parallel="tests">
-  <test name="Sequential(failed)" parallel="tests">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="none">
+  <test name="Test(failed)" parallel="none">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+        <include name="commonforall"/>
+      </run>
+    </groups>
     <classes>
-      <class name="testNG.homeWork.CreateLead">
+      <class name="groups.hw.CreateLead">
         <methods>
           <include name="loginleaftaps"/>
-          <include name="creteLead" invocation-numbers="0"/>
-          <include name="closeBrowserLeafTaps"/>
+          <include name="creteLead"/>
         </methods>
-      </class> <!-- testNG.homeWork.CreateLead -->
-      <class name="testNG.homeWork.Duplicatelead">
-        <methods>
-          <include name="loginleaftaps"/>
-          <include name="closeBrowserLeafTaps"/>
-        </methods>
-      </class> <!-- testNG.homeWork.Duplicatelead -->
-      <class name="testNG.homeWork.EditLeads">
-        <methods>
-          <include name="loginleaftaps"/>
-          <include name="closeBrowserLeafTaps"/>
-        </methods>
-      </class> <!-- testNG.homeWork.EditLeads -->
-      <class name="testNG.homeWork.Mergeleads">
-        <methods>
-          <include name="loginleaftaps"/>
-          <include name="closeBrowserLeafTaps"/>
-        </methods>
-      </class> <!-- testNG.homeWork.Mergeleads -->
-      <class name="testNG.homeWork.DeleteLeads">
-        <methods>
-          <include name="loginleaftaps"/>
-          <include name="closeBrowserLeafTaps"/>
-        </methods>
-      </class> <!-- testNG.homeWork.DeleteLeads -->
+      </class> <!-- groups.hw.CreateLead -->
     </classes>
-  </test> <!-- Sequential(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

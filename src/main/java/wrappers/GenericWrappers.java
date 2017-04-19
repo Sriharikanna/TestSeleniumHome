@@ -39,7 +39,7 @@ public class GenericWrappers implements Wrappers {
 				driver = new FirefoxDriver();
 			}
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-			driver.manage().window().maximize();
+			//driver.manage().window().maximize();
 			driver.get(url);
 			// Getting handle of initial window
 			parentwindow = driver.getWindowHandle();

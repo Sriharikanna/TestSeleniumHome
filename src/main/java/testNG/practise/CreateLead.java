@@ -5,7 +5,9 @@ import org.testng.annotations.Test;
 import wrappers.LeafTapswrappers;
 
 public class CreateLead extends LeafTapswrappers {
+
 	@Test(invocationCount = 7)
+
 	public void createLead() {
 		// Click on Create Lead
 		clickByLink("Create Lead");

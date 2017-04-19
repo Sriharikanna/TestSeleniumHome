@@ -1,231 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="5" passed="4">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="100580" started-at="2017-03-28T09:49:36Z" finished-at="2017-03-28T09:51:17Z">
+  <suite name="Default suite" duration-ms="48" started-at="2017-04-05T09:16:44Z" finished-at="2017-04-05T09:16:44Z">
     <groups>
+      <group name="Smoke">
+        <method signature="CreateLead.creteLead(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:groups.hw.CreateLead@67b872]" name="creteLead" class="groups.hw.CreateLead"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test name="Sequential" duration-ms="60729" started-at="2017-03-28T09:49:36Z" finished-at="2017-03-28T09:50:37Z">
-      <class name="testNG.homeWork.CreateLead">
-        <test-method status="PASS" signature="loginleaftaps()[pri:0, instance:testNG.homeWork.CreateLead@b2c100]" name="loginleaftaps" is-config="true" duration-ms="11928" started-at="2017-03-28T15:19:36Z" finished-at="2017-03-28T15:19:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginleaftaps -->
-        <test-method status="FAIL" signature="creteLead(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testNG.homeWork.CreateLead@b2c100]" name="creteLead" duration-ms="10332" started-at="2017-03-28T15:19:48Z" data-provider="createLeadData" finished-at="2017-03-28T15:19:59Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Cognizant Techn..Sol..]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Srihari]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[M]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[17865]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Conference]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Automobile]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[First Name Local]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[Last Name Local]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[Mr.]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[Er.]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[My Dept]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[120000]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[INR - Indian Rupee]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.RuntimeException">
+    <test name="Default test" duration-ms="48" started-at="2017-04-05T09:16:44Z" finished-at="2017-04-05T09:16:44Z">
+      <class name="groups.hw.CreateLead">
+        <test-method status="FAIL" signature="creteLead(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:groups.hw.CreateLead@67b872]" name="creteLead" duration-ms="8" started-at="2017-04-05T14:46:44Z" data-provider="createLeadData" finished-at="2017-04-05T14:46:44Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+The data provider is trying to pass 13 parameters but the method groups.hw.CreateLead#creteLead takes 12]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException
-	at wrappers.GenericWrappers.clickByLink(GenericWrappers.java:280)
-	at testNG.homeWork.CreateLead.creteLead(CreateLead.java:14)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+              <![CDATA[org.testng.TestNGException: 
+The data provider is trying to pass 13 parameters but the method groups.hw.CreateLead#creteLead takes 12
+	at org.testng.internal.Invoker.injectParameters(Invoker.java:1223)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1118)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
 	at org.testng.TestRunner.privateRun(TestRunner.java:773)
 	at org.testng.TestRunner.run(TestRunner.java:623)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- creteLead -->
-        <test-method status="PASS" signature="closeBrowserLeafTaps()[pri:0, instance:testNG.homeWork.CreateLead@b2c100]" name="closeBrowserLeafTaps" is-config="true" duration-ms="79" started-at="2017-03-28T15:19:59Z" finished-at="2017-03-28T15:19:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowserLeafTaps -->
-      </class> <!-- testNG.homeWork.CreateLead -->
-      <class name="testNG.homeWork.EditLeads">
-        <test-method status="PASS" signature="loginleaftaps()[pri:0, instance:testNG.homeWork.EditLeads@1b554cc]" name="loginleaftaps" is-config="true" duration-ms="14650" started-at="2017-03-28T15:19:59Z" finished-at="2017-03-28T15:20:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginleaftaps -->
-        <test-method status="PASS" signature="editLeads(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testNG.homeWork.EditLeads@1b554cc]" name="editLeads" duration-ms="21359" started-at="2017-03-28T15:20:13Z" data-provider="eleadssource" finished-at="2017-03-28T15:20:35Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Srihari]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[View Lead | opentaps CRM]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[CTS]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editLeads -->
-        <test-method status="PASS" signature="closeBrowserLeafTaps()[pri:0, instance:testNG.homeWork.EditLeads@1b554cc]" name="closeBrowserLeafTaps" is-config="true" duration-ms="2328" started-at="2017-03-28T15:20:35Z" finished-at="2017-03-28T15:20:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowserLeafTaps -->
-      </class> <!-- testNG.homeWork.EditLeads -->
-    </test> <!-- Sequential -->
-    <test name="Parallel" duration-ms="100580" started-at="2017-03-28T09:49:36Z" finished-at="2017-03-28T09:51:17Z">
-      <class name="testNG.homeWork.DeleteLeads">
-        <test-method status="PASS" signature="loginleaftaps()[pri:0, instance:testNG.homeWork.DeleteLeads@11be3c5]" name="loginleaftaps" is-config="true" duration-ms="13113" started-at="2017-03-28T15:20:03Z" finished-at="2017-03-28T15:20:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginleaftaps -->
-        <test-method status="PASS" signature="deleteLeads(java.lang.String, java.lang.String)[pri:0, instance:testNG.homeWork.DeleteLeads@11be3c5]" name="deleteLeads" duration-ms="20521" started-at="2017-03-28T15:20:16Z" data-provider="sourceOfdata" finished-at="2017-03-28T15:20:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[123]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[No records to display]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteLeads -->
-        <test-method status="PASS" signature="closeBrowserLeafTaps()[pri:0, instance:testNG.homeWork.DeleteLeads@11be3c5]" name="closeBrowserLeafTaps" is-config="true" duration-ms="2310" started-at="2017-03-28T15:20:37Z" finished-at="2017-03-28T15:20:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowserLeafTaps -->
-      </class> <!-- testNG.homeWork.DeleteLeads -->
-      <class name="testNG.homeWork.Duplicatelead">
-        <test-method status="PASS" signature="loginleaftaps()[pri:0, instance:testNG.homeWork.Duplicatelead@1551a94]" name="loginleaftaps" is-config="true" duration-ms="12377" started-at="2017-03-28T15:19:36Z" finished-at="2017-03-28T15:19:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginleaftaps -->
-        <test-method status="PASS" signature="duplicateleads(java.lang.String, java.lang.String)[pri:0, instance:testNG.homeWork.Duplicatelead@1551a94]" name="duplicateleads" duration-ms="12179" started-at="2017-03-28T15:19:49Z" data-provider="duplicateData" finished-at="2017-03-28T15:20:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test@test.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Duplicate Lead | opentaps CRM]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- duplicateleads -->
-        <test-method status="PASS" signature="closeBrowserLeafTaps()[pri:0, instance:testNG.homeWork.Duplicatelead@1551a94]" name="closeBrowserLeafTaps" is-config="true" duration-ms="2327" started-at="2017-03-28T15:20:01Z" finished-at="2017-03-28T15:20:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowserLeafTaps -->
-      </class> <!-- testNG.homeWork.Duplicatelead -->
-      <class name="testNG.homeWork.Mergeleads">
-        <test-method status="PASS" signature="loginleaftaps()[pri:0, instance:testNG.homeWork.Mergeleads@af6cff]" name="loginleaftaps" is-config="true" duration-ms="7901" started-at="2017-03-28T15:20:39Z" finished-at="2017-03-28T15:20:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginleaftaps -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:testNG.homeWork.Mergeleads@af6cff]" name="login" duration-ms="27516" started-at="2017-03-28T15:20:47Z" data-provider="mleadsSource" finished-at="2017-03-28T15:21:15Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="closeBrowserLeafTaps()[pri:0, instance:testNG.homeWork.Mergeleads@af6cff]" name="closeBrowserLeafTaps" is-config="true" duration-ms="2316" started-at="2017-03-28T15:21:15Z" finished-at="2017-03-28T15:21:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowserLeafTaps -->
-      </class> <!-- testNG.homeWork.Mergeleads -->
-    </test> <!-- Parallel -->
-  </suite> <!-- Suite -->
+      </class> <!-- groups.hw.CreateLead -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

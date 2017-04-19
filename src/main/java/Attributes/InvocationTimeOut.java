@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 public class InvocationTimeOut {
-	@Test(invocationCount = 7/*,threadPoolSize = 3*/, invocationTimeOut = 30000)
+	@Test(invocationCount = 7,/*threadPoolSize = 2,*/ invocationTimeOut = 10000)
 	/*
 	 * This code will iterate for 7 times by using 3 browser, threadPoolSize is
 	 * to mention how many browser should run in parallel manner. The
@@ -19,7 +19,7 @@ public class InvocationTimeOut {
 		System.setProperty("webdriver.chrome.driver", "D:\\selenium\\drivers\\chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
 		// maximize browser
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 		// open Url
 		driver.get("http://leaftaps.com/control/main");
 		// enter the username

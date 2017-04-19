@@ -34,7 +34,7 @@ public class DependsOnMethodss extends LeafTapswrappers {
 		clickByXpath("//input[@class='smallSubmit']");
 	}
 
-	//@Test
+	@Test (enabled = false)
 	public void mergeLead() throws Exception {
 		clickByLink("Leads");
 		clickByLink("Merge Leads");
