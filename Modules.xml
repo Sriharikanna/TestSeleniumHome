@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+	<test name="Lead" parallel="classes" thread-count="2">
+		<groups>
+			<run>
+				<include name="common"></include>
+				<include name="sanity"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="leaf.Lead.CreateLead" />
+			<class name="leaf.Lead.MergeLead" />
+			<class name="leaf.Lead.DeleteLead" />
+			<class name="leaf.Lead.DuplicateLead" />
+			<class name="leaf.Lead.EditLead" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Contact" parallel="false">
+		<groups>
+			<run>
+				<include name="common"></include>
+				<include name="sanity"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="leaf.Contact.MergeContact" />
+			<class name="leaf.Contact.EditContact" />
+			<class name="leaf.Contact.CreateContact" />
+			<class name="leaf.Contact.DeleteContact" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

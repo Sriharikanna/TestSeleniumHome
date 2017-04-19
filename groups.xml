@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="5" parallel="classes" thread-count="3">
+
+	<groups>
+		<run>
+			<!-- <exclude name="regression"></exclude> -->
+			<include name="common"></include>
+			<include name="s.*"></include>
+			<!-- <include name="sanity"></include> -->
+		</run>
+	</groups>
+
+	<test name="Test">
+		<classes>
+			<class name="leaf.Lead.CreateLead" />
+			<class name="leaf.Lead.MergeLead" />
+			<class name="leaf.Lead.DeleteLead" />
+			<class name="leaf.Lead.DuplicateLead" />
+			<class name="leaf.Lead.EditLead" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
