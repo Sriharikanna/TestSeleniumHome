@@ -1,7 +1,7 @@
 package wrappers;
 
 public interface Wrappers {
-
+	
 	/**
 	 * This method will launch the given browser and maximise the browser and
 	 * set the wait for 30 seconds and load the url
@@ -28,7 +28,7 @@ public interface Wrappers {
 	 * @return
 	 * @throws Exception
 	 */
-	public void enterById(String idValue, String data) throws Exception;
+	public void  enterById(String idValue, String data) throws Exception;
 
 	/**
 	 * This method will enter the value to the text field using name attribute

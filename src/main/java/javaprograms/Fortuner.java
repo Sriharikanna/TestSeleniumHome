@@ -1,13 +1,14 @@
 package javaprograms;
 
-public class Fortuner {
+public class Fortuner extends BaseClass {
 	private int drive;
 	public static void main(String[] args) {
-		
+		Fortuner obj = new Fortuner();
+		obj.getVariable();
 		
 	}
-	private void getVariable() {
-		
+	public void getVariable() {
+		System.out.println();
 	}
 	public Fortuner()
 	{
@@ -17,4 +18,5 @@ public class Fortuner {
 	{
 			drive = 4;
 	}
+	
 }

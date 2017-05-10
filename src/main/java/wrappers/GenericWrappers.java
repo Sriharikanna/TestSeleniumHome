@@ -31,7 +31,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 
 	public RemoteWebDriver driver;
 	protected static Properties prop;
-	public String sUrl, primaryWindowHandle, sHubUrl, sHubPort;
+	public String sUrl, primaryWindowHandle, sHubUrl, sHubPort;	
 
 	public GenericWrappers() {
 		Properties prop = new Properties();
@@ -134,7 +134,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	 * @author Babu - TestLeaf
 	 * @throws IOException
 	 */
-	public void enterById(String idValue, String data) {
+	public  void enterById(String idValue, String data) {
 		try {
 			driver.findElement(By.id(idValue)).clear();
 			driver.findElement(By.id(idValue)).sendKeys(data);
