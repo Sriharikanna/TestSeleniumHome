@@ -5,8 +5,10 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class WebTable {
 
@@ -14,6 +16,7 @@ public class WebTable {
 
 		//		FirefoxDriver driver = new FirefoxDriver();
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+		//ChromeDriver driver = new ChromeDriver();
 		ChromeDriver driver = new ChromeDriver();
 
 		// Navigate to the url
