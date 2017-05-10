@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="groups.hw.CreateLead">
+      <class name="practising.Selenium.april.WebtableTestLeaf">
         <methods>
-          <include name="creteLead"/>
+          <include name="readTable"/>
+          <include name="browserClose"/>
+          <include name="invokeBrowser"/>
         </methods>
-      </class> <!-- groups.hw.CreateLead -->
+      </class> <!-- practising.Selenium.april.WebtableTestLeaf -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

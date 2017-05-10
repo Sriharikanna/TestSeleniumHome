@@ -1,49 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="48" started-at="2017-04-05T09:16:44Z" finished-at="2017-04-05T09:16:44Z">
+  <suite name="Default suite" duration-ms="7390" started-at="2017-04-25T09:02:40Z" finished-at="2017-04-25T09:02:47Z">
     <groups>
-      <group name="Smoke">
-        <method signature="CreateLead.creteLead(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:groups.hw.CreateLead@67b872]" name="creteLead" class="groups.hw.CreateLead"/>
-      </group> <!-- Smoke -->
     </groups>
-    <test name="Default test" duration-ms="48" started-at="2017-04-05T09:16:44Z" finished-at="2017-04-05T09:16:44Z">
-      <class name="groups.hw.CreateLead">
-        <test-method status="FAIL" signature="creteLead(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:groups.hw.CreateLead@67b872]" name="creteLead" duration-ms="8" started-at="2017-04-05T14:46:44Z" data-provider="createLeadData" finished-at="2017-04-05T14:46:44Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-The data provider is trying to pass 13 parameters but the method groups.hw.CreateLead#creteLead takes 12]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-The data provider is trying to pass 13 parameters but the method groups.hw.CreateLead#creteLead takes 12
-	at org.testng.internal.Invoker.injectParameters(Invoker.java:1223)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1118)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:773)
-	at org.testng.TestRunner.run(TestRunner.java:623)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
-	at org.testng.TestNG.run(TestNG.java:1018)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+    <test name="Default test" duration-ms="7390" started-at="2017-04-25T09:02:40Z" finished-at="2017-04-25T09:02:47Z">
+      <class name="practising.Selenium.april.WebtableTestLeaf">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:practising.Selenium.april.WebtableTestLeaf@1b6a447]" name="invokeBrowser" is-config="true" duration-ms="5887" started-at="2017-04-25T14:32:40Z" finished-at="2017-04-25T14:32:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- creteLead -->
-      </class> <!-- groups.hw.CreateLead -->
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="PASS" signature="readTable()[pri:0, instance:practising.Selenium.april.WebtableTestLeaf@1b6a447]" name="readTable" duration-ms="1450" started-at="2017-04-25T14:32:46Z" finished-at="2017-04-25T14:32:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readTable -->
+        <test-method status="PASS" signature="browserClose()[pri:0, instance:practising.Selenium.april.WebtableTestLeaf@1b6a447]" name="browserClose" is-config="true" duration-ms="50" started-at="2017-04-25T14:32:47Z" finished-at="2017-04-25T14:32:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- practising.Selenium.april.WebtableTestLeaf -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
